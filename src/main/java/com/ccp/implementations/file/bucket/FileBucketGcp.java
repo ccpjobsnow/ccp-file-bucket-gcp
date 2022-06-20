@@ -3,14 +3,12 @@ package com.ccp.implementations.file.bucket;
 import java.io.FileInputStream;
 import java.util.Base64;
 
-import com.ccp.dependency.injection.CcpImplementation;
 import com.ccp.especifications.file.bucket.CcpFileBucket;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.storage.Storage;
 import com.google.cloud.storage.StorageOptions;
 
-@CcpImplementation
-public class CcpFileBucketGcp implements CcpFileBucket {
+class FileBucketGcp implements CcpFileBucket {
 
 	@Override
 	public String read(String tenant, String bucketName, String fileName) {
