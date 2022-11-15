@@ -28,4 +28,10 @@ class FileBucketGcp implements CcpFileBucket {
 		}
 
 	}
+
+	@Override
+	public void remove(String tenant, String bucketName, String fileName) {
+		// TODO Auto-generated method stub
+		
+	}
 }
