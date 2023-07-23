@@ -1,4 +1,4 @@
-package com.ccp.implementations.file.bucket;
+package com.ccp.implementations.file.bucket.gcp;
 
 import java.io.FileInputStream;
 import java.util.Base64;
