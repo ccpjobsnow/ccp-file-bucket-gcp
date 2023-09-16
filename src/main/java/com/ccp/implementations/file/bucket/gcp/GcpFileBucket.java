@@ -8,7 +8,7 @@ import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.storage.Storage;
 import com.google.cloud.storage.StorageOptions;
 
-class FileBucketGcp implements CcpFileBucket {
+class GcpFileBucket implements CcpFileBucket {
 
 	@Override
 	public String read(String tenant, String bucketName, String fileName) {
