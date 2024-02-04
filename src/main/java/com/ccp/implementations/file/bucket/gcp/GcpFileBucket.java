@@ -10,7 +10,7 @@ import com.google.cloud.storage.StorageOptions;
 
 class GcpFileBucket implements CcpFileBucket {
 
-	@Override
+	
 	public String read(String tenant, String bucketName, String fileName) {
 		try {
 			String getenv = System.getenv("credentials_file");
@@ -29,7 +29,7 @@ class GcpFileBucket implements CcpFileBucket {
 
 	}
 
-	@Override
+	
 	public void remove(String tenant, String bucketName, String fileName) {
 		// TODO Auto-generated method stub
 		
