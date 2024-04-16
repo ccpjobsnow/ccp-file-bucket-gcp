@@ -1,8 +1,8 @@
 package com.ccp.implementations.file.bucket.gcp;
 
 import java.io.FileInputStream;
-import java.util.Base64;
 
+import com.ccp.decorators.CcpStringDecorator;
 import com.ccp.especifications.file.bucket.CcpFileBucket;
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.cloud.storage.Storage;
@@ -21,7 +21,7 @@ class GcpFileBucket implements CcpFileBucket {
 					.build().getService();
 			com.google.cloud.storage.Blob blob = service.get(bucketName, fileName);
 			byte[] content = blob.getContent();
-			String encodeToString = Base64.getEncoder().encodeToString(content);
+			String encodeToString = new CcpStringDecorator(content).text().asBase64();
 			return encodeToString;
 		} catch (Exception e) {
 			throw new RuntimeException(e);
