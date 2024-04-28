@@ -21,7 +21,7 @@ class GcpFileBucket implements CcpFileBucket {
 					.build().getService();
 			com.google.cloud.storage.Blob blob = service.get(bucketName, fileName);
 			byte[] content = blob.getContent();
-			String encodeToString = new CcpStringDecorator(content).text().asBase64();
+			String encodeToString = new CcpStringDecorator(content).text().asBase64().content;
 			return encodeToString;
 		} catch (Exception e) {
 			throw new RuntimeException(e);
