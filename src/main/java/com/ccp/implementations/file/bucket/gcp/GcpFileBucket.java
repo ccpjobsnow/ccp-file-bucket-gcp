@@ -9,9 +9,8 @@ import com.google.cloud.storage.Storage;
 import com.google.cloud.storage.StorageOptions;
 
 class GcpFileBucket implements CcpFileBucket {
-
 	
-	public String read(String tenant, String bucketName, String fileName) {
+	public String get(String tenant, String bucketName, String fileName) {
 		try {
 			String getenv = System.getenv("credentials_file");
 			FileInputStream fileInputStream = new FileInputStream(getenv);
@@ -30,8 +29,15 @@ class GcpFileBucket implements CcpFileBucket {
 	}
 
 	
-	public void remove(String tenant, String bucketName, String fileName) {
+	public String delete(String tenant, String bucketName, String fileName) {
 		// TODO Auto-generated method stub
+		return "";
+	}
+
+
+	public String save(String tenant, String bucketName, String fileName, String fileContent) {
+		// TODO Auto-generated method stub
+		return "";
 		
 	}
 }
