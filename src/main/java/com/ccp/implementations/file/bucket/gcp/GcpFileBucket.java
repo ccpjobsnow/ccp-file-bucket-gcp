@@ -30,13 +30,14 @@ class GcpFileBucket implements CcpFileBucket {
 
 	
 	public String delete(String tenant, String bucketName, String fileName) {
-		// TODO Auto-generated method stub
+		// FIXME EXCLUIR BUCKET
+		// FIXME BUCKET ON PREMISSE
 		return "";
 	}
 
 
 	public String save(String tenant, String bucketName, String fileName, String fileContent) {
-		// TODO Auto-generated method stub
+		// FIXME SALVAR BUCKET
 		return "";
 		
 	}
