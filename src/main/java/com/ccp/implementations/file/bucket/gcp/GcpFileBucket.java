@@ -31,7 +31,6 @@ class GcpFileBucket implements CcpFileBucket {
 	
 	public String delete(String tenant, String bucketName, String fileName) {
 		// FIXME EXCLUIR BUCKET
-		// FIXME BUCKET ON PREMISSE
 		return "";
 	}
 
