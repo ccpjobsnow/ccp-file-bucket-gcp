@@ -40,4 +40,9 @@ class GcpFileBucket implements CcpFileBucket {
 		return "";
 		
 	}
+
+	public String delete(String tenant, String bucketName) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
