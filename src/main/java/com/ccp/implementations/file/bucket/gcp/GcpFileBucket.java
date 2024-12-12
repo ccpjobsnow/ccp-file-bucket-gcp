@@ -42,7 +42,7 @@ class GcpFileBucket implements CcpFileBucket {
 	}
 
 	public String delete(String tenant, String bucketName) {
-		// TODO Auto-generated method stub
+		// FIXME Auto-generated method stub
 		return null;
 	}
 }
